@@ -1,0 +1,190 @@
+"","Year","Avg.Temp","Item","Yield","Entity","Code","Annual.precipitation"
+"1",1961,8.81,"Barley",3262.4,"United Kingdom","GBR",874.0966
+"2",1961,8.81,"Rape or colza seed",2500,"United Kingdom","GBR",874.0966
+"3",1961,8.81,"Wheat",3537.2,"United Kingdom","GBR",874.0966
+"4",1962,7.74,"Barley",3635.5,"United Kingdom","GBR",860.97845
+"5",1962,7.74,"Rape or colza seed",2500,"United Kingdom","GBR",860.97845
+"6",1962,7.74,"Wheat",4352.7,"United Kingdom","GBR",860.97845
+"7",1963,7.64,"Barley",3515.5,"United Kingdom","GBR",859.13385
+"8",1963,7.64,"Rape or colza seed",2500,"United Kingdom","GBR",859.13385
+"9",1963,7.64,"Wheat",3905.1,"United Kingdom","GBR",859.13385
+"10",1964,8.5,"Barley",3694.3,"United Kingdom","GBR",813.12103
+"11",1964,8.5,"Rape or colza seed",2500,"United Kingdom","GBR",813.12103
+"12",1964,8.5,"Wheat",4247.5,"United Kingdom","GBR",813.12103
+"13",1965,7.92,"Barley",3751.7,"United Kingdom","GBR",982.92487
+"14",1965,7.92,"Rape or colza seed",2500,"United Kingdom","GBR",982.92487
+"15",1965,7.92,"Wheat",4065.3,"United Kingdom","GBR",982.92487
+"16",1966,8.42,"Barley",3516.2,"United Kingdom","GBR",990.3971
+"17",1966,8.42,"Rape or colza seed",2489.8,"United Kingdom","GBR",990.3971
+"18",1966,8.42,"Wheat",3835.5,"United Kingdom","GBR",990.3971
+"19",1967,8.62,"Barley",3777.8,"United Kingdom","GBR",1028.5586
+"20",1967,8.62,"Rape or colza seed",2491.8,"United Kingdom","GBR",1028.5586
+"21",1967,8.62,"Wheat",4183.2,"United Kingdom","GBR",1028.5586
+"22",1968,8.35,"Barley",3444.7,"United Kingdom","GBR",1013.82654
+"23",1968,8.35,"Rape or colza seed",2492.3,"United Kingdom","GBR",1013.82654
+"24",1968,8.35,"Wheat",3547.1,"United Kingdom","GBR",1013.82654
+"25",1969,8.29,"Barley",3590.3,"United Kingdom","GBR",898.63306
+"26",1969,8.29,"Rape or colza seed",1674.9,"United Kingdom","GBR",898.63306
+"27",1969,8.29,"Wheat",4038.3,"United Kingdom","GBR",898.63306
+"28",1970,8.46,"Barley",3356.6,"United Kingdom","GBR",1013.8404
+"29",1970,8.46,"Rape or colza seed",2029,"United Kingdom","GBR",1013.8404
+"30",1970,8.46,"Wheat",4193.9,"United Kingdom","GBR",1013.8404
+"31",1971,8.95,"Barley",3740,"United Kingdom","GBR",899.6
+"32",1971,8.95,"Rape or colza seed",1931.2,"United Kingdom","GBR",899.6
+"33",1971,8.95,"Wheat",4389,"United Kingdom","GBR",899.6
+"34",1972,8.29,"Barley",4040.3,"United Kingdom","GBR",962.6726
+"35",1972,8.29,"Rape or colza seed",2034.9,"United Kingdom","GBR",962.6726
+"36",1972,8.29,"Wheat",4241.2,"United Kingdom","GBR",962.6726
+"37",1973,8.62,"Barley",3972.2,"United Kingdom","GBR",840.81165
+"38",1973,8.62,"Rape or colza seed",2215.3,"United Kingdom","GBR",840.81165
+"39",1973,8.62,"Wheat",4365.4,"United Kingdom","GBR",840.81165
+"40",1974,8.57,"Barley",4124.6,"United Kingdom","GBR",1080.5391
+"41",1974,8.57,"Rape or colza seed",2263.8,"United Kingdom","GBR",1080.5391
+"42",1974,8.57,"Wheat",4971.2,"United Kingdom","GBR",1080.5391
+"43",1975,8.97,"Barley",3630.3,"United Kingdom","GBR",863.9026
+"44",1975,8.97,"Rape or colza seed",1564.1,"United Kingdom","GBR",863.9026
+"45",1975,8.97,"Wheat",4334.4,"United Kingdom","GBR",863.9026
+"46",1976,8.91,"Barley",3505,"United Kingdom","GBR",886.348
+"47",1976,8.91,"Rape or colza seed",2312.5,"United Kingdom","GBR",886.348
+"48",1976,8.91,"Wheat",3850.5,"United Kingdom","GBR",886.348
+"49",1977,8.49,"Barley",4387.2,"United Kingdom","GBR",1002.9757
+"50",1977,8.49,"Rape or colza seed",2561.4,"United Kingdom","GBR",1002.9757
+"51",1977,8.49,"Wheat",4900.6,"United Kingdom","GBR",1002.9757
+"52",1978,8.43,"Barley",4188.3,"United Kingdom","GBR",985.89
+"53",1978,8.43,"Rape or colza seed",2415.6,"United Kingdom","GBR",985.89
+"54",1978,8.43,"Wheat",5252.6,"United Kingdom","GBR",985.89
+"55",1979,7.8,"Barley",4106.4,"United Kingdom","GBR",1078.2223
+"56",1979,7.8,"Rape or colza seed",2670.3,"United Kingdom","GBR",1078.2223
+"57",1979,7.8,"Wheat",5229.2,"United Kingdom","GBR",1078.2223
+"58",1980,8.42,"Barley",4429.4,"United Kingdom","GBR",1087.3555
+"59",1980,8.42,"Rape or colza seed",3268.9,"United Kingdom","GBR",1087.3555
+"60",1980,8.42,"Wheat",5878.2,"United Kingdom","GBR",1087.3555
+"61",1981,8.33,"Barley",4396.2,"United Kingdom","GBR",1085.6637
+"62",1981,8.33,"Rape or colza seed",2600,"United Kingdom","GBR",1085.6637
+"63",1981,8.33,"Wheat",5841.7,"United Kingdom","GBR",1085.6637
+"64",1982,8.81,"Barley",4932.5,"United Kingdom","GBR",1106.2944
+"65",1982,8.81,"Rape or colza seed",3333.3,"United Kingdom","GBR",1106.2944
+"66",1982,8.81,"Wheat",6205.7,"United Kingdom","GBR",1106.2944
+"67",1983,8.95,"Barley",4654.9,"United Kingdom","GBR",1012.6398
+"68",1983,8.95,"Rape or colza seed",2545,"United Kingdom","GBR",1012.6398
+"69",1983,8.95,"Wheat",6371.7,"United Kingdom","GBR",1012.6398
+"70",1984,8.71,"Barley",5590.7,"United Kingdom","GBR",979.9922
+"71",1984,8.71,"Rape or colza seed",3431.2,"United Kingdom","GBR",979.9922
+"72",1984,8.71,"Wheat",7720.5,"United Kingdom","GBR",979.9922
+"73",1985,7.95,"Barley",4954.2,"United Kingdom","GBR",1049.9714
+"74",1985,7.95,"Rape or colza seed",3010.1,"United Kingdom","GBR",1049.9714
+"75",1985,7.95,"Wheat",6333.3,"United Kingdom","GBR",1049.9714
+"76",1986,7.8,"Barley",5223.8,"United Kingdom","GBR",1119.2472
+"77",1986,7.8,"Rape or colza seed",3180.6,"United Kingdom","GBR",1119.2472
+"78",1986,7.8,"Wheat",6965.9,"United Kingdom","GBR",1119.2472
+"79",1987,8.21,"Barley",5043.7,"United Kingdom","GBR",1011.0468
+"80",1987,8.21,"Rape or colza seed",3487.1,"United Kingdom","GBR",1011.0468
+"81",1987,8.21,"Wheat",5988,"United Kingdom","GBR",1011.0468
+"82",1988,8.92,"Barley",4637.9,"United Kingdom","GBR",1064.0234
+"83",1988,8.92,"Rape or colza seed",2997.1,"United Kingdom","GBR",1064.0234
+"84",1988,8.92,"Wheat",6214.2,"United Kingdom","GBR",1064.0234
+"85",1989,9.39,"Barley",4883,"United Kingdom","GBR",961.2302
+"86",1989,9.39,"Rape or colza seed",2953.3,"United Kingdom","GBR",961.2302
+"87",1989,9.39,"Wheat",6736.9,"United Kingdom","GBR",961.2302
+"88",1990,9.49,"Barley",5208.8,"United Kingdom","GBR",1047.456
+"89",1990,9.49,"Rape or colza seed",3226.5,"United Kingdom","GBR",1047.456
+"90",1990,9.49,"Wheat",6971.2,"United Kingdom","GBR",1047.456
+"91",1991,8.73,"Barley",5474.3,"United Kingdom","GBR",912.19226
+"92",1991,8.73,"Rape or colza seed",2916.8,"United Kingdom","GBR",912.19226
+"93",1991,8.73,"Wheat",7251.9,"United Kingdom","GBR",912.19226
+"94",1992,8.86,"Barley",5674.6,"United Kingdom","GBR",1090.4183
+"95",1992,8.86,"Rape or colza seed",2881.2,"United Kingdom","GBR",1090.4183
+"96",1992,8.86,"Wheat",6819.4,"United Kingdom","GBR",1090.4183
+"97",1993,8.48,"Barley",5187.3,"United Kingdom","GBR",1036.6329
+"98",1993,8.48,"Rape or colza seed",2599.1,"United Kingdom","GBR",1036.6329
+"99",1993,8.48,"Wheat",7328.2,"United Kingdom","GBR",1036.6329
+"100",1994,9.03,"Barley",5375.2,"United Kingdom","GBR",1078.0511
+"101",1994,9.03,"Rape or colza seed",2530.2,"United Kingdom","GBR",1078.0511
+"102",1994,9.03,"Wheat",7352,"United Kingdom","GBR",1078.0511
+"103",1995,9.39,"Barley",5733.2,"United Kingdom","GBR",921.7514
+"104",1995,9.39,"Rape or colza seed",2813.5,"United Kingdom","GBR",921.7514
+"105",1995,9.39,"Wheat",7699.2,"United Kingdom","GBR",921.7514
+"106",1996,8.39,"Barley",6109.5,"United Kingdom","GBR",876.0513
+"107",1996,8.39,"Rape or colza seed",3412,"United Kingdom","GBR",876.0513
+"108",1996,8.39,"Wheat",8131.5,"United Kingdom","GBR",876.0513
+"109",1997,9.56,"Barley",5760.1,"United Kingdom","GBR",952.08606
+"110",1997,9.56,"Rape or colza seed",3229.5,"United Kingdom","GBR",952.08606
+"111",1997,9.56,"Wheat",7377.6,"United Kingdom","GBR",952.08606
+"112",1998,9.3,"Barley",5285.7,"United Kingdom","GBR",1170.2332
+"113",1998,9.3,"Rape or colza seed",2936.3,"United Kingdom","GBR",1170.2332
+"114",1998,9.3,"Wheat",7554.2,"United Kingdom","GBR",1170.2332
+"115",1999,9.5,"Barley",5581.8,"United Kingdom","GBR",1127.4917
+"116",1999,9.5,"Rape or colza seed",3234.1,"United Kingdom","GBR",1127.4917
+"117",1999,9.5,"Wheat",8049.5,"United Kingdom","GBR",1127.4917
+"118",2000,9.23,"Barley",5755.3,"United Kingdom","GBR",1217.7625
+"119",2000,9.23,"Rape or colza seed",2877.9,"United Kingdom","GBR",1217.7625
+"120",2000,9.23,"Wheat",8007.5,"United Kingdom","GBR",1217.7625
+"121",2001,9.01,"Barley",5349.4,"United Kingdom","GBR",979.2568
+"122",2001,9.01,"Rape or colza seed",2563.5,"United Kingdom","GBR",979.2568
+"123",2001,9.01,"Wheat",7082.7,"United Kingdom","GBR",979.2568
+"124",2002,9.56,"Barley",5565.8,"United Kingdom","GBR",1131.2045
+"125",2002,9.56,"Rape or colza seed",3397.9,"United Kingdom","GBR",1131.2045
+"126",2002,9.56,"Wheat",8002.8,"United Kingdom","GBR",1131.2045
+"127",2003,9.6,"Barley",5910.8,"United Kingdom","GBR",846.4629
+"128",2003,9.6,"Rape or colza seed",3265.5,"United Kingdom","GBR",846.4629
+"129",2003,9.6,"Wheat",7779.8,"United Kingdom","GBR",846.4629
+"130",2004,9.46,"Barley",5758.7,"United Kingdom","GBR",1078.6027
+"131",2004,9.46,"Rape or colza seed",2902.9,"United Kingdom","GBR",1078.6027
+"132",2004,9.46,"Wheat",7775.4,"United Kingdom","GBR",1078.6027
+"133",2005,9.48,"Barley",5858.2,"United Kingdom","GBR",969.3572
+"134",2005,9.48,"Rape or colza seed",3193.6,"United Kingdom","GBR",969.3572
+"135",2005,9.48,"Wheat",7960.9,"United Kingdom","GBR",969.3572
+"136",2006,9.71,"Barley",5946.7,"United Kingdom","GBR",1052.4624
+"137",2006,9.71,"Rape or colza seed",3285.9,"United Kingdom","GBR",1052.4624
+"138",2006,9.71,"Wheat",8036.1,"United Kingdom","GBR",1052.4624
+"139",2007,9.71,"Barley",5655.9,"United Kingdom","GBR",1076.5902
+"140",2007,9.71,"Rape or colza seed",3093.8,"United Kingdom","GBR",1076.5902
+"141",2007,9.71,"Wheat",7224.4,"United Kingdom","GBR",1076.5902
+"142",2008,9.23,"Barley",5953.5,"United Kingdom","GBR",1161.6356
+"143",2008,9.23,"Rape or colza seed",3298.9,"United Kingdom","GBR",1161.6356
+"144",2008,9.23,"Wheat",8281.4,"United Kingdom","GBR",1161.6356
+"145",2009,9.33,"Barley",5833.8,"United Kingdom","GBR",1078.571
+"146",2009,9.33,"Rape or colza seed",3355.2,"United Kingdom","GBR",1078.571
+"147",2009,9.33,"Wheat",7928.4,"United Kingdom","GBR",1078.571
+"148",2010,8.21,"Barley",5702.5,"United Kingdom","GBR",874.48865
+"149",2010,8.21,"Rape or colza seed",3476.1,"United Kingdom","GBR",874.48865
+"150",2010,8.21,"Wheat",7674.6,"United Kingdom","GBR",874.48865
+"151",2011,9.54,"Barley",5663.9,"United Kingdom","GBR",1026.4492
+"152",2011,9.54,"Rape or colza seed",3914.9,"United Kingdom","GBR",1026.4492
+"153",2011,9.54,"Wheat",7747.1,"United Kingdom","GBR",1026.4492
+"154",2012,8.96,"Barley",5511,"United Kingdom","GBR",1224.9493
+"155",2012,8.96,"Rape or colza seed",3383.1,"United Kingdom","GBR",1224.9493
+"156",2012,8.96,"Wheat",6657.1,"United Kingdom","GBR",1224.9493
+"157",2013,8.92,"Barley",5846.7,"United Kingdom","GBR",976.55945
+"158",2013,8.92,"Rape or colza seed",2975.5,"United Kingdom","GBR",976.55945
+"159",2013,8.92,"Wheat",7383.8,"United Kingdom","GBR",976.55945
+"160",2014,9.96,"Barley",6399.1,"United Kingdom","GBR",1176.3936
+"161",2014,9.96,"Rape or colza seed",3646.1,"United Kingdom","GBR",1176.3936
+"162",2014,9.96,"Wheat",8578.6,"United Kingdom","GBR",1176.3936
+"163",2015,9.23,"Barley",6693.9,"United Kingdom","GBR",1136.916
+"164",2015,9.23,"Rape or colza seed",3898.8,"United Kingdom","GBR",1136.916
+"165",2015,9.23,"Wheat",8976,"United Kingdom","GBR",1136.916
+"166",2016,9.39,"Barley",5931.4,"United Kingdom","GBR",996.0411
+"167",2016,9.39,"Rape or colza seed",3065.6,"United Kingdom","GBR",996.0411
+"168",2016,9.39,"Wheat",7889.7,"United Kingdom","GBR",996.0411
+"169",2017,9.65,"Barley",6090.9,"United Kingdom","GBR",1023.77045
+"170",2017,9.65,"Rape or colza seed",3855.9,"United Kingdom","GBR",1023.77045
+"171",2017,9.65,"Wheat",8279.6,"United Kingdom","GBR",1023.77045
+"172",2018,9.54,"Barley",5720.6,"United Kingdom","GBR",972.3696
+"173",2018,9.54,"Rape or colza seed",3451.1,"United Kingdom","GBR",972.3696
+"174",2018,9.54,"Wheat",7754.6,"United Kingdom","GBR",972.3696
+"175",2019,9.62,"Barley",6926,"United Kingdom","GBR",1144.0614
+"176",2019,9.62,"Rape or colza seed",3305.7,"United Kingdom","GBR",1144.0614
+"177",2019,9.62,"Wheat",8934.5,"United Kingdom","GBR",1144.0614
+"178",2020,9.72,"Barley",5848,"United Kingdom","GBR",1181.3411
+"179",2020,9.72,"Rape or colza seed",2731.6,"United Kingdom","GBR",1181.3411
+"180",2020,9.72,"Wheat",6963.2,"United Kingdom","GBR",1181.3411
+"181",2021,9.44,"Barley",6053,"United Kingdom","GBR",1062.8793
+"182",2021,9.44,"Rape or colza seed",3189.7,"United Kingdom","GBR",1062.8793
+"183",2021,9.44,"Wheat",7814.5,"United Kingdom","GBR",1062.8793
+"184",2022,10.13,"Barley",6689.3,"United Kingdom","GBR",1031.2336
+"185",2022,10.13,"Rape or colza seed",3731.8,"United Kingdom","GBR",1031.2336
+"186",2022,10.13,"Wheat",8590.4,"United Kingdom","GBR",1031.2336
+"187",2023,10.14,"Barley",6124,"United Kingdom","GBR",1178.6658
+"188",2023,10.14,"Rape or colza seed",3109,"United Kingdom","GBR",1178.6658
+"189",2023,10.14,"Wheat",8127.9,"United Kingdom","GBR",1178.6658

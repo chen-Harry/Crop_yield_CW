@@ -1,0 +1,24 @@
+---
+title: "EDA"
+---
+
+# Goals
+
+The project shall aim to study the effect of precipitation and temperature on crop yield. 
+
+# Data
+
+* The data on crop yield was obtained from the [Food and Agriculture Organization of the United Nations](https://www.fao.org/faostat/en/#data/QCL/metadata), which includes various data on crops and livestock products from across the world. The project shall mainly focus on data for the United Kingdom. 
+* The data for precipitation was obtained from [Out World in Data](https://ourworldindata.org/grapher/average-precipitation-per-year), and records the average precipitation for countries on an annual basis. 
+* The data for temperature was obtained from the [World Bank Group](https://climateknowledgeportal.worldbank.org/country/united-kingdom/climate-data-historical#:~:text=The%20UK). It contains historic data on the mean surface air temperature.
+
+We shall mainly be looking at 3 crops: wheat, barley, and rapeseed, which represent the 3 most popular crops grown in the UK(TODO: citation).
+
+![Average crop yield](./outputs/100-eda/annual_yield.png "Annual Yield of Crops in the UK")
+There appears to be a general trend of better crop yield over time. The yield of all 3 crops appears to be highly correlated, suggesting that they have common causes.
+
+![Crop yield against precipitation](./outputs/100-eda/precipitation_yield.png "Yield against precipitation of Crops in the UK")
+![Crop yield against temperature](./outputs/100-eda/temp_yield.png "Yield against temperature of Crops in the UK")
+
+We can see clearly that for each crop the yield is positively correlated with annual precipitation and average temperature.
+
