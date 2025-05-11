@@ -21,7 +21,8 @@ crop_data <- dt %>%
          Element == "Yield") %>%
   select(matches("^Y\\d+"), Item) %>% 
   melt(id.vars = "Item", variable.name="Year", value.name="Yield") %>%
-  mutate(Year = as.numeric(sub("^Y", "", as.character(Year))))
+  mutate(Year = as.numeric(sub("^Y", "", as.character(Year)))) %>%
+  rename(Crop = Item)
 
 file <- file.path(data.dir, 
                   'precipitation', 

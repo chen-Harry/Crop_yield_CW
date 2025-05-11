@@ -1,6 +1,9 @@
+# R and RStudio
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
+
+
 renv/
 /.quarto/

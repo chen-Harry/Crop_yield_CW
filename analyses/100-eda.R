@@ -1,3 +1,5 @@
+# create plots for 100_eda.qmd
+
 require(ggplot2)
 require(data.table)
 require(here)
@@ -12,41 +14,53 @@ file <- file.path(data.dir,
 dt <- as.data.table(read.csv(file))
 
 
-p <- ggplot(crop_data, 
+p <- ggplot(dt, 
             aes(x = as.integer(Year), 
                 y=Yield, 
-                group=Item, 
-                colour=Item)) +
+                group=Crop, 
+                colour=Crop)) +
   geom_line() +
   labs(title = "",
        x = "Year",
        y = "Yield") +
   theme_minimal()
 
-ggsave(file = file.path(out.dir, '100-eda', 'annual_yield.png'), p)
+ggsave(file = file.path(out.dir, '100-eda', 'annual_yield.png'), 
+       p,
+       width = 6,
+       height = 4,
+       dpi = 300)
 
 
 p <- ggplot(dt, 
             aes(x=Annual.precipitation, 
                 y=Yield, 
-                group=Item, 
-                colour=Item)) +
+                group=Crop, 
+                colour=Crop)) +
   geom_point() +
   labs(x = "Annual Precipitation (mm)") +
   theme_minimal()
 
-ggsave(file = file.path(out.dir, '100-eda', 'precipitation_yield.png'), p)
+ggsave(file = file.path(out.dir, '100-eda', 'precipitation_yield.png'), 
+       p,
+       width = 6,
+       height = 4,
+       dpi = 300)
 
 
 p <- ggplot(dt, 
             aes(x=Avg.Temp, 
                 y=Yield, 
-                group=Item, 
-                colour=Item)) +
+                group=Crop, 
+                colour=Crop)) +
   geom_point() +
   labs(x = "Average temperature (Celsius)") +
   theme_minimal()
 
-ggsave(file = file.path(out.dir, '100-eda', 'temp_yield.png'), p)
+ggsave(file = file.path(out.dir, '100-eda', 'temp_yield.png'), 
+       p,
+       width = 6,
+       height = 4,
+       dpi = 300)
 
 

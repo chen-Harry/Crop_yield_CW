@@ -1,4 +1,4 @@
-"","Year","Avg.Temp","Item","Yield","Entity","Code","Annual.precipitation"
+"","Year","Avg.Temp","Crop","Yield","Entity","Code","Annual.precipitation"
 "1",1961,8.81,"Barley",3262.4,"United Kingdom","GBR",874.0966
 "2",1961,8.81,"Rape or colza seed",2500,"United Kingdom","GBR",874.0966
 "3",1961,8.81,"Wheat",3537.2,"United Kingdom","GBR",874.0966
