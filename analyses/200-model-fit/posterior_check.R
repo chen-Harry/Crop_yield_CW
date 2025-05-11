@@ -1,5 +1,6 @@
 require(data.table)
 require(here)
+require(ggplot2)
 
 # import data ==================================================================
 
@@ -45,7 +46,7 @@ model_predictive_interval <-
 model_pp_summary <- merge(model_predictive_interval, dt, by='OBS_ID')
 model_pp_summary[, IN_PPI := Yield >= q_lower & Yield <= q_upper]
 
-# plot preditive interval ======================================================
+# plot predictive interval =====================================================
 
 p <- ggplot(model_pp_summary, aes(x = Year)) +
   geom_boxplot( aes( group = Year,

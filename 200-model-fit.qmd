@@ -1,0 +1,65 @@
+---
+title: "Model Fit"
+format: html
+---
+
+# Model 
+I will fit a simple model for crop yield against precipitation and average annual temperature.
+Let $y_{i,t}$ be the crop yield of crop $i$ at year $t$,$T_t$ the average temperature of year $t$, $P_t$ the average precipitation at year $t$.
+The model will assume that $y_{i,t}$ follows a lognormal distribution.
+$$
+\begin{align}
+y_{i,t} &\sim \text{LogNormal}(\mu_{i,t}, \sigma_i^2) \\
+\mu_{i,t} &= \alpha_i + \beta_i T_t + \gamma_i P_t \\
+\end{align}
+$$
+
+The model will be fit using a Bayesian model, using the [Stan](https://mc-stan.org/) software draw samples from the posterior.
+Given that precipitation and temperature operate at very different scales, I have chosen to standardise the predictors to help with numerical stability. Let $T'_t$ and $P'_t$ be the standardised temperature and precipitation, respectively. Then:
+$$
+\mu_{i,t} = \alpha'_i + \beta'_i T'_t + \gamma'_i P'_t \\
+$$
+is equivalent to the previous formulation when
+$$
+\begin{align}
+\alpha_i &= \alpha'_i - \beta'_i \frac{\mu_T}{\sigma_T} - \gamma'_i \frac{\mu_P}{\sigma_P} \\
+\beta_i &= \frac{\beta'_i}{\sigma_T} \\
+\gamma_i &= \frac{\gamma'_i}{\sigma_P} \\
+\end{align}
+$$
+where $\mu_T$, $\mu_P$, $\sigma_T$, $\sigma_P$ are the means and standard deviations for temperature and precipitation, respectively. 
+
+Finally, here is the full model specification:
+$$
+\begin{align}
+y_{i,t} &\sim \text{LogNormal}(\mu_{i,t}, \sigma_i^2) \\
+\mu_{i,t} &= \alpha'_i + \beta'_i T'_t + \gamma'_i P'_t \\
+\alpha'_i &\sim \text{Normal}(0, 10^2) \\
+\beta'_i &\sim \text{Normal}(0,1) \\
+\gamma'_i &\sim \text{Normal}(0,1) \\
+\sigma_i &\sim \text{Half-Normal}(0,1) \\
+\end{align}
+$$
+
+# Model Check
+
+To confirm that the model does indeed fit the data well, I performed a posterior predictive check. To do this, I generated Monte Carlo samples from the posterior predictive distribution
+$$
+p(y^*_j \, | \, y) = \int p(y^*_j \, | \, \theta) p(\theta \, | \, y) d\theta 
+$$
+After this, an empirical posterior preditive interval can be calculated for each observation based on the Monte Carlo samples.
+
+![Model posterior predictive check](./outputs/200-model-fit/posterior_pred.png "Posterior Predictive Check Plot")
+From the plot we can see that the model matches the data reasonably well, and roughly 95% of all data points fall within the posterior predictive interval. 
+
+
+# Summary 
+
+Since we are using a lognormal model, the median yield $y_{i,t}$is given by $\exp(\mu_{i,t})$. We can view the marginal effects of 1 standard unit increase in temperature by looking at the distribution of $\exp(\beta_i) \, | \, y$. This represent the multiplicative effect of 1 standard unit increase in temperature. 
+
+![Effect of temperature](./outputs/200-model-fit/temp_effects.png "Effect of temperature on median yield")
+We can see that wheat is the most sensitive to temperature, while rapeseed is the least sensitive. As seen in exploratory data analyses, increases in average annual temperature correlates to higher yields.
+
+Doing the same for precipitation, we get:
+![Effect of precipitation](./outputs/200-model-fit/precipitation_effects.png "Effect of precipitation on median yield")
+Here, we see that precipitation has around the same effect on all 3 crops, around a 5-8% increase in crop yield.

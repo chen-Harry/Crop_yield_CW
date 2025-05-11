@@ -10,6 +10,7 @@ website:
         text: Home
       - about.qmd
       - 100-eda.qmd
+      - 200-model-fit.qmd
 
 format:
   html:

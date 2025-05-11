@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>EDA – Crop_yield_CW</title>
+<title>readme – Crop_yield_CW</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ddd961a2510921635943dfbbd19534c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-ddd961a2510921635943dfbbd19534c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,7 +68,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -78,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Crop_yield_CW</span>
     </a>
   </div>
@@ -89,19 +89,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./100-eda.html" aria-current="page"> 
+    <a class="nav-link" href="../../../100-eda.html"> 
 <span class="menu-text">EDA</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./200-model-fit.html"> 
+    <a class="nav-link" href="../../../200-model-fit.html"> 
 <span class="menu-text">200-model-fit</span></a>
   </li>  
 </ul>
@@ -120,50 +120,99 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#goals" id="toc-goals" class="nav-link active" data-scroll-target="#goals">Goals</a></li>
-  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li><a href="#annual-precipitation---data-package" id="toc-annual-precipitation---data-package" class="nav-link active" data-scroll-target="#annual-precipitation---data-package">Annual precipitation - Data package</a>
+  <ul class="collapse">
+  <li><a href="#active-filters" id="toc-active-filters" class="nav-link" data-scroll-target="#active-filters">Active Filters</a></li>
+  <li><a href="#csv-structure" id="toc-csv-structure" class="nav-link" data-scroll-target="#csv-structure">CSV Structure</a></li>
+  <li><a href="#metadata.json-structure" id="toc-metadata.json-structure" class="nav-link" data-scroll-target="#metadata.json-structure">Metadata.json structure</a></li>
+  <li><a href="#about-the-data" id="toc-about-the-data" class="nav-link" data-scroll-target="#about-the-data">About the data</a></li>
+  <li><a href="#detailed-information-about-the-data" id="toc-detailed-information-about-the-data" class="nav-link" data-scroll-target="#detailed-information-about-the-data">Detailed information about the data</a></li>
+  <li><a href="#annual-precipitation" id="toc-annual-precipitation" class="nav-link" data-scroll-target="#annual-precipitation">Annual precipitation</a>
+  <ul class="collapse">
+  <li><a href="#how-to-cite-this-data" id="toc-how-to-cite-this-data" class="nav-link" data-scroll-target="#how-to-cite-this-data">How to cite this data</a></li>
+  <li><a href="#how-is-this-data-described-by-its-producer---contains-modified-copernicus-climate-change-service-information-2025" id="toc-how-is-this-data-described-by-its-producer---contains-modified-copernicus-climate-change-service-information-2025" class="nav-link" data-scroll-target="#how-is-this-data-described-by-its-producer---contains-modified-copernicus-climate-change-service-information-2025">How is this data described by its producer - Contains modified Copernicus Climate Change Service information (2025)?</a></li>
+  <li><a href="#source" id="toc-source" class="nav-link" data-scroll-target="#source">Source</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">EDA</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="goals" class="level1">
-<h1>Goals</h1>
-<p>The project shall aim to study the effect of precipitation and temperature on crop yield.</p>
+<section id="annual-precipitation---data-package" class="level1">
+<h1>Annual precipitation - Data package</h1>
+<p>This data package contains the data that powers the chart <a href="https://ourworldindata.org/grapher/average-precipitation-per-year?v=1&amp;csvType=full&amp;useColumnShortNames=false">“Annual precipitation”</a> on the Our World in Data website. It was downloaded on May 03, 2025.</p>
+<section id="active-filters" class="level3">
+<h3 class="anchored" data-anchor-id="active-filters">Active Filters</h3>
+<p>A filtered subset of the full data was downloaded. The following filters were applied:</p>
 </section>
-<section id="data" class="level1">
-<h1>Data</h1>
+<section id="csv-structure" class="level2">
+<h2 class="anchored" data-anchor-id="csv-structure">CSV Structure</h2>
+<p>The high level structure of the CSV file is that each row is an observation for an entity (usually a country or region) and a timepoint (usually a year).</p>
+<p>The first two columns in the CSV file are “Entity” and “Code”. “Entity” is the name of the entity (e.g.&nbsp;“United States”). “Code” is the OWID internal entity code that we use if the entity is a country or region. For normal countries, this is the same as the <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3">iso alpha-3</a> code of the entity (e.g.&nbsp;“USA”) - for non-standard countries like historical countries these are custom codes.</p>
+<p>The third column is either “Year” or “Day”. If the data is annual, this is “Year” and contains only the year as an integer. If the column is “Day”, the column contains a date string in the form “YYYY-MM-DD”.</p>
+<p>The final column is the data column, which is the time series that powers the chart. If the CSV data is downloaded using the “full data” option, then the column corresponds to the time series below. If the CSV data is downloaded using the “only selected data visible in the chart” option then the data column is transformed depending on the chart type and thus the association with the time series might not be as straightforward.</p>
+</section>
+<section id="metadata.json-structure" class="level2">
+<h2 class="anchored" data-anchor-id="metadata.json-structure">Metadata.json structure</h2>
+<p>The .metadata.json file contains metadata about the data package. The “charts” key contains information to recreate the chart, like the title, subtitle etc.. The “columns” key contains information about each of the columns in the csv, like the unit, timespan covered, citation for the data etc..</p>
+</section>
+<section id="about-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="about-the-data">About the data</h2>
+<p>Our World in Data is almost never the original producer of the data - almost all of the data we use has been compiled by others. If you want to re-use data, it is your responsibility to ensure that you adhere to the sources’ license and to credit them correctly. Please note that a single time series may have more than one source - e.g.&nbsp;when we stich together data from different time periods by different producers or when we calculate per capita metrics using population data from a second source.</p>
+</section>
+<section id="detailed-information-about-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="detailed-information-about-the-data">Detailed information about the data</h2>
+</section>
+<section id="annual-precipitation" class="level2">
+<h2 class="anchored" data-anchor-id="annual-precipitation">Annual precipitation</h2>
+<p>Total annual precipitation—rain and snow—calculated as the sum of daily averages, reported as the depth of water falling to Earth’s surface, excluding fog and dew. Last updated: January 7, 2025<br>
+Next update: July 2025<br>
+Date range: 1940–2024<br>
+Unit: millimeters</p>
+<section id="how-to-cite-this-data" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-cite-this-data">How to cite this data</h3>
+<section id="in-line-citation" class="level4">
+<h4 class="anchored" data-anchor-id="in-line-citation">In-line citation</h4>
+<p>If you have limited space (e.g.&nbsp;in data visualizations), you can use this abbreviated in-line citation:<br>
+Contains modified Copernicus Climate Change Service information (2025) – with major processing by Our World in Data</p>
+</section>
+<section id="full-citation" class="level4">
+<h4 class="anchored" data-anchor-id="full-citation">Full citation</h4>
+<p>Contains modified Copernicus Climate Change Service information (2025) – with major processing by Our World in Data. “Annual precipitation” [dataset]. Contains modified Copernicus Climate Change Service information, “ERA5 monthly averaged data on single levels from 1940 to present 2” [original data]. Source: Contains modified Copernicus Climate Change Service information (2025) – with major processing by Our World In Data</p>
+</section>
+</section>
+<section id="how-is-this-data-described-by-its-producer---contains-modified-copernicus-climate-change-service-information-2025" class="level3">
+<h3 class="anchored" data-anchor-id="how-is-this-data-described-by-its-producer---contains-modified-copernicus-climate-change-service-information-2025">How is this data described by its producer - Contains modified Copernicus Climate Change Service information (2025)?</h3>
+<p>This parameter is the accumulated liquid and frozen water, comprising rain and snow, that falls to the Earth’s surface. It is the sum of large-scale precipitation and convective precipitation. Large-scale precipitation is generated by the cloud scheme in the ECMWF Integrated Forecasting System (IFS). The cloud scheme represents the formation and dissipation of clouds and large-scale precipitation due to changes in atmospheric quantities (such as pressure, temperature and moisture) predicted directly by the IFS at spatial scales of the grid box or larger. Convective precipitation is generated by the convection scheme in the IFS, which represents convection at spatial scales smaller than the grid box. This parameter does not include fog, dew or the precipitation that evaporates in the atmosphere before it lands at the surface of the Earth. This parameter is accumulated over a particular time period which depends on the data extracted. For the monthly averaged reanalysis and the monthly averaged ensemble members, the accumulation period is 1 day. For the monthly averaged reanalysis by hour of day, the accumulation period is 1 hour and for the monthly averaged ensemble members by hour of day, the accumulation period is 3 hours. The units of this parameter are depth in metres of water equivalent. It is the depth the water would have if it were spread evenly over the grid box. Care should be taken when comparing model parameters with observations, because observations are often local to a particular point in space and time, rather than representing averages over a model grid box.</p>
+</section>
+<section id="source" class="level3">
+<h3 class="anchored" data-anchor-id="source">Source</h3>
+<section id="contains-modified-copernicus-climate-change-service-information-era5-monthly-averaged-data-on-single-levels-from-1940-to-present" class="level4">
+<h4 class="anchored" data-anchor-id="contains-modified-copernicus-climate-change-service-information-era5-monthly-averaged-data-on-single-levels-from-1940-to-present">Contains modified Copernicus Climate Change Service information – ERA5 monthly averaged data on single levels from 1940 to present</h4>
+<p>Retrieved on: 2025-01-07<br>
+Retrieved from: https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means?tab=overview</p>
+</section>
+<section id="notes-on-our-processing-step-for-this-indicator" class="level4">
+<h4 class="anchored" data-anchor-id="notes-on-our-processing-step-for-this-indicator">Notes on our processing step for this indicator</h4>
 <ul>
-<li>The data on crop yield was obtained from the <a href="https://www.fao.org/faostat/en/#data/QCL/metadata">Food and Agriculture Organization of the United Nations</a>, which includes various data on crops and livestock products from across the world. The project shall mainly focus on data for the United Kingdom.</li>
-<li>The data for precipitation was obtained from <a href="https://ourworldindata.org/grapher/average-precipitation-per-year">Out World in Data</a>, and records the average precipitation for countries on an annual basis.</li>
-<li>The data for temperature was obtained from the <a href="https://climateknowledgeportal.worldbank.org/country/united-kingdom/climate-data-historical#:~:text=The%20UK">World Bank Group</a>. It contains historic data on the mean surface air temperature.</li>
+<li>Initially, the dataset is provided with specific coordinates in terms of longitude and latitude. To tailor this data to each country, we use geographical boundaries as defined by the World Bank. The method involves trimming the precipitation dataset to match the exact geographical shape of each country. To correct for potential distortions caused by projecting the Earth’s curved surface onto a flat map, we apply a latitude-based weighting. This step is essential for maintaining accuracy, particularly in high-latitude regions where distortion is more pronounced. The result of this process is a latitude-weighted average precipitation for each nation.</li>
+<li>It’s important to note, however, that due to the resolution constraints of the Copernicus dataset, this methodology might not be as effective for countries with very small landmasses. In such cases, the process may not yield reliable data.</li>
+<li>The derived precipitation for each country is calculated based on administrative borders, encompassing all land surface types within these areas. As a result, precipitation over oceans and seas is not included in these averages, keeping the data focused on terrestrial environments.</li>
+<li>Global precipitation averages and anomalies, however, are calculated over both land and ocean surfaces.</li>
+<li>The precipitation anomaly is calculated by comparing the average precipitation of a specific time period (e.g., a particular year or month) to the average surface precipitation of the same period from 1991 to 2020.</li>
+<li>When calculating anomalies for each country, the total precipitation of a given year or month is compared to the 1991-2020 average precipitation for that specific country.</li>
+<li>The reason for using the 1991-2020 period as the reference mean is that it is the standard reference period used by our data source, the Copernicus Climate Change Service. This period is also adopted by the UK Met Office. This approach ensures consistency in identifying climate variations over time.</li>
 </ul>
-<p>We shall mainly be looking at 3 crops: wheat, barley, and rapeseed, which represent the 3 most popular crops grown in the UK(TODO: citation).</p>
-<p><img src="./outputs/100-eda/annual_yield.png" title="Annual Yield of Crops in the UK" class="img-fluid" alt="Average crop yield"> There appears to be a general trend of better crop yield over time. The yield of all 3 crops appears to be highly correlated, suggesting that they have common causes.</p>
-<p><img src="./outputs/100-eda/precipitation_yield.png" title="Yield against precipitation of Crops in the UK" class="img-fluid" alt="Crop yield against precipitation"> <img src="./outputs/100-eda/temp_yield.png" title="Yield against temperature of Crops in the UK" class="img-fluid" alt="Crop yield against temperature"></p>
-<p>We can see clearly that for each crop the yield is positively correlated with annual precipitation and average temperature.</p>
 
 
+</section>
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
