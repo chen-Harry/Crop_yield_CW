@@ -3,8 +3,6 @@ require(here)
 require(tidyverse)
 require(cmdstanr)
 
-source(here::here("src", "standardise.R"))
-
 # import data ==================================================================
 
 data.dir <- here("data", "derived")
@@ -38,7 +36,7 @@ model_fit <- model_compiled$sample(
   chains = 2,
   parallel_chains = 2,
   iter_warmup = 500,
-  iter_sampling = 1000,
+  iter_sampling = 2000,
   refresh = 500, # print update every 500 iters,
   save_warmup = TRUE,
   adapt_delta = 0.99

@@ -1,0 +1,27 @@
+---
+title: "300-forecast"
+format: html
+---
+
+# Temperature Forecast Model
+
+To investigate the effect of increasing temperature on crop yield, I first fitted a model for the average annual temperature data. I assumed a quadratic trend in the temperature, with some non-parametric fluctuations modelled by a Gaussian process with an RBF kernel, with scale parameter $\alpha$ and lengthscale $\rho$. The time $t$ has been linearly transformed to fall within the interval $[-1, 1]$.
+$$
+\begin{align}
+T_t &\sim \text{Normal}(\mu_t, \sigma^2) \\
+\mu_t &= \beta_0 + \beta_1 t + \beta_2 t^2 + f(t) \\
+f &\sim \text{GP}(\alpha, \rho) \\
+\alpha & \sim \text{Half-Cauchy}(0,1) \\
+\rho & \sim \text{Inv-Gamma}(5, 1) \\
+\beta_0 & \sim \text{Normal}(0, 10^2) \\
+\beta_1, \, \beta_2 & \sim \text{Normal}(0, 1) \\
+\sigma & \sim \text{Half-Normal}(0,1)
+\end{align}
+$$
+The goal is to be able to use this model to forecast the temperature for the next 10 years based on historic data. In order to efficiently sample from the posterior of the Gaussian process, I have used a fast Hilbert Space approximation [(Riutort-Mayol, G., Bürkner, PC., Andersen, M.R. et al. 2023)](https://arxiv.org/pdf/2004.11408). Some of the stan code used to implement this was copied from the MATH70073 - Advanced Bayesian Methods course notes.
+
+![Temperature forecast model](./outputs/300-forecast/temp_forecast.png "Posterior 95% confidence interval for average annual temperature.") The model provides an adequate fit to the data, albeit with quite large error bars. There is a clear non-stationary increasing trend in the last 50 or so years.
+
+# Impact on Crop Yield
+
+Using forecasted values 
