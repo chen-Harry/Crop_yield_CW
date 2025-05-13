@@ -122,16 +122,16 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./100-eda.html"> 
 <span class="menu-text">Model Fit</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./200-model-fit.html" aria-current="page"> 
 <span class="menu-text">Model Fit</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./300-forecast.html"> 
+<span class="menu-text">300-forecast</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -209,12 +209,12 @@ y_{i,t} &amp;\sim \text{LogNormal}(\mu_{i,t}, \sigma_i^2) \\
 <h1>Model Check</h1>
 <p>To confirm that the model does indeed fit the data well, I performed a posterior predictive check. To do this, I generated Monte Carlo samples from the posterior predictive distribution <span class="math display">\[
 p(y^*_j \, | \, y) = \int p(y^*_j \, | \, \theta) p(\theta \, | \, y) d\theta
-\]</span> After this, an empirical posterior preditive interval can be calculated for each observation based on the Monte Carlo samples.</p>
+\]</span> After this, an empirical posterior predictive interval can be calculated for each observation based on the Monte Carlo samples.</p>
 <p><img src="./outputs/200-model-fit/posterior_pred.png" title="Posterior Predictive Check Plot" class="img-fluid" alt="Model posterior predictive check"> From the plot we can see that the model matches the data reasonably well, and roughly 95% of all data points fall within the posterior predictive interval.</p>
 </section>
 <section id="summary" class="level1">
 <h1>Summary</h1>
-<p>Since we are using a lognormal model, the median yield <span class="math inline">\(y_{i,t}\)</span>is given by <span class="math inline">\(\exp(\mu_{i,t})\)</span>. We can view the marginal effects of 1 standard unit increase in temperature by looking at the distribution of <span class="math inline">\(\exp(\beta_i) \, | \, y\)</span>. This represent the multiplicative effect of 1 standard unit increase in temperature.</p>
+<p>Since we are using a lognormal model, the median yield <span class="math inline">\(y_{i,t}\)</span> is given by <span class="math inline">\(\exp(\mu_{i,t})\)</span>. We can view the marginal effects of 1 standard unit increase in temperature by looking at the distribution of <span class="math inline">\(\exp(\beta_i) \, | \, y\)</span>. This represent the multiplicative effect of 1 standard unit increase in temperature.</p>
 <p><img src="./outputs/200-model-fit/temp_effects.png" title="Effect of temperature on median yield" class="img-fluid" alt="Effect of temperature"> We can see that wheat is the most sensitive to temperature, while rapeseed is the least sensitive. As seen in exploratory data analyses, increases in average annual temperature correlates to higher yields.</p>
 <p>Doing the same for precipitation, we get: <img src="./outputs/200-model-fit/precipitation_effects.png" title="Effect of precipitation on median yield" class="img-fluid" alt="Effect of precipitation"> Here, we see that precipitation has around the same effect on all 3 crops, around a 5-8% increase in crop yield.</p>
 

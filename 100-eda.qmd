@@ -4,7 +4,7 @@ title: "Model Fit"
 
 # Goals
 
-The project shall aim to study the effect of precipitation and temperature on crop yield.
+The project shall aim to study the effect of precipitation and temperature on crop yield, and predict the effect of rising temperature on crop yield within the UK.
 
 # Data
 
@@ -14,7 +14,7 @@ The project shall aim to study the effect of precipitation and temperature on cr
 
 We shall mainly be looking at 3 crops: wheat, barley, and rapeseed, which represent the 3 most popular crops grown in the UK(TODO: citation).
 
-![Average crop yield](./outputs/100-eda/annual_yield.png "Annual Yield of Crops in the UK") There appears to be a general trend of better crop yield over time. The yield of all 3 crops appears to be highly correlated, suggesting that they have common causes.
+![Average crop yield](./outputs/100-eda/annual_yield.png "Annual Yield of Crops in the UK") There appears to be a general trend of better crop yield over time. The yield of all 3 crops appears to be highly correlated, suggesting that they have common causes. One thing to note here is that the yield for rapeseed production is recorded as constant for the first 5 years of the data, and almost constant for the next 3 years. This seems unlikely, given the rest of the data, and will probably negatively impact the model fit for rapeseed yield.
 
 ![Crop yield against precipitation](./outputs/100-eda/precipitation_yield.png "Yield against precipitation of Crops in the UK") ![Crop yield against temperature](./outputs/100-eda/temp_yield.png "Yield against temperature of Crops in the UK")
 

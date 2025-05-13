@@ -22,8 +22,7 @@ $$ is equivalent to the previous formulation when $$
 \end{align}
 $$ where $\mu_T$, $\mu_P$, $\sigma_T$, $\sigma_P$ are the means and standard deviations for temperature and precipitation, respectively.
 
-Finally, here is the full model specification: 
-$$
+Finally, here is the full model specification: $$
 \begin{align}
 y_{i,t} &\sim \text{LogNormal}(\mu_{i,t}, \sigma_i^2) \\
 \mu_{i,t} &= \alpha'_i + \beta'_i T'_t + \gamma'_i P'_t \\
@@ -36,18 +35,16 @@ $$
 
 # Model Check
 
-To confirm that the model does indeed fit the data well, I performed a posterior predictive check. To do this, I generated Monte Carlo samples from the posterior predictive distribution 
-$$
+To confirm that the model does indeed fit the data well, I performed a posterior predictive check. To do this, I generated Monte Carlo samples from the posterior predictive distribution $$
 p(y^*_j \, | \, y) = \int p(y^*_j \, | \, \theta) p(\theta \, | \, y) d\theta 
-$$ 
-After this, an empirical posterior predictive interval can be calculated for each observation based on the Monte Carlo samples.
+$$ After this, an empirical posterior predictive interval can be calculated for each observation based on the Monte Carlo samples.
 
 ![Model posterior predictive check](./outputs/200-model-fit/posterior_pred.png "Posterior Predictive Check Plot") From the plot we can see that the model matches the data reasonably well, and roughly 95% of all data points fall within the posterior predictive interval.
 
 # Summary
 
-Since we are using a lognormal model, the median yield $y_{i,t}$ is given by $\exp(\mu_{i,t})$. We can view the marginal effects of 1 standard unit increase in temperature by looking at the distribution of $\exp(\beta_i) \, | \, y$. This represent the multiplicative effect of 1 standard unit increase in temperature.
+Since we are using a log-normal model, the median yield $y_{i,t}$ is given by $\exp(\mu_{i,t})$. We can view the marginal effects of 1 standard unit increase in temperature by looking at the distribution of $\exp(\beta_i) \, | \, y$. This represent the multiplicative effect of 1 standard unit increase in temperature on the median yield. The graph below shows the 95% confidence interval for the effect of temperature, for each crop.
 
 ![Effect of temperature](./outputs/200-model-fit/temp_effects.png "Effect of temperature on median yield") We can see that wheat is the most sensitive to temperature, while rapeseed is the least sensitive. As seen in exploratory data analyses, increases in average annual temperature correlates to higher yields.
 
-Doing the same for precipitation, we get: ![Effect of precipitation](./outputs/200-model-fit/precipitation_effects.png "Effect of precipitation on median yield") Here, we see that precipitation has around the same effect on all 3 crops, around a 5-8% increase in crop yield.
+Doing the same for precipitation, we get: ![Effect of precipitation](./outputs/200-model-fit/precipitation_effects.png "Effect of precipitation on median yield") Here, we see that precipitation has around the same effect on all 3 crops, around a 5-8% increase in median crop yield.

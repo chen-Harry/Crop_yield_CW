@@ -8,9 +8,9 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
       - 100-eda.qmd
       - 200-model-fit.qmd
+      - 300-forecast.qmd
 
 format:
   html:
