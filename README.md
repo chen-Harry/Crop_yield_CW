@@ -1,6 +1,6 @@
 # Crop Yield Project
 
-The project aims to model the relationship between the yield of 3 crops, barley, rapeseed, and wheat, against temperature and precipitation. It then aims to use this model to forecast the yield of crops in the future by projecting expected trend in temperature.
+The project aims to model the relationship between the yield of 3 crops, barley, rapeseed, and wheat, against temperature and precipitation. It then aims to use this model to forecast the yield of crops in the future by projecting expected trend in temperature. Here is the [link](https://chen-harry.github.io/Crop_yield_CW/) to the website.
 
 ## Project outline
 
