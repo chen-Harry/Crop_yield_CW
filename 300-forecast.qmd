@@ -27,3 +27,7 @@ Using the forecast values for temperature, and combined with the previous model 
 ![Barley yield forecast](./outputs/300-forecast/barley_forecast.png "Yield forecast for barley.") ![Rapeseed yield forecast](./outputs/300-forecast/rapeseed_forecast.png "Yield forecast for rapeseed.") ![Wheat yield forecast](./outputs/300-forecast/wheat_forecast.png "Yield forecast for wheat.")
 
 The forecast for wheat and barley appears to be somewhat reasonable given historic data. The forecast for rapeseed appears to be overly confident in its predictions. As a sanity check, forecast appears to be consistent with the previous results, which showed that wheat is the most sensitive to increases in temperature, and rapeseed the least sensitive.
+
+# Discussion
+
+The analyses presented here is based on the empirical association between crop yield and temperature. For example, it could be that higher temperatures are linked with more sunlight, which could explain the higher yield. Another explanation could be that as technology advances there is a natural increase in crop yield, and climate change has also caused the temperature to rise, i.e. time is a confounding variable. Or it could be due to market forces that farms with poor yield close down, so only farms with high yield remain.
