@@ -1,11 +1,5 @@
 ---
-title: "Crop_yield_CW"
+title: "Crop Yield Project"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+This is a website outlining a project on crop yield in the UK. The project aims to model the relationship between the yield of 3 crops, barley, rapeseed, and wheat, against temperature and precipitation. It then aims to use this model to forecast the yield of crops in the future by projecting expected trend in temperature.

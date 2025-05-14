@@ -131,7 +131,7 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./300-forecast.html"> 
-<span class="menu-text">300-forecast</span></a>
+<span class="menu-text">Forecasting</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -214,9 +214,9 @@ p(y^*_j \, | \, y) = \int p(y^*_j \, | \, \theta) p(\theta \, | \, y) d\theta
 </section>
 <section id="summary" class="level1">
 <h1>Summary</h1>
-<p>Since we are using a lognormal model, the median yield <span class="math inline">\(y_{i,t}\)</span> is given by <span class="math inline">\(\exp(\mu_{i,t})\)</span>. We can view the marginal effects of 1 standard unit increase in temperature by looking at the distribution of <span class="math inline">\(\exp(\beta_i) \, | \, y\)</span>. This represent the multiplicative effect of 1 standard unit increase in temperature.</p>
+<p>Since we are using a log-normal model, the median yield <span class="math inline">\(y_{i,t}\)</span> is given by <span class="math inline">\(\exp(\mu_{i,t})\)</span>. We can view the marginal effects of 1 standard unit increase in temperature by looking at the distribution of <span class="math inline">\(\exp(\beta_i) \, | \, y\)</span>. This represent the multiplicative effect of 1 standard unit increase in temperature on the median yield. The graph below shows the 95% confidence interval for the effect of temperature, for each crop.</p>
 <p><img src="./outputs/200-model-fit/temp_effects.png" title="Effect of temperature on median yield" class="img-fluid" alt="Effect of temperature"> We can see that wheat is the most sensitive to temperature, while rapeseed is the least sensitive. As seen in exploratory data analyses, increases in average annual temperature correlates to higher yields.</p>
-<p>Doing the same for precipitation, we get: <img src="./outputs/200-model-fit/precipitation_effects.png" title="Effect of precipitation on median yield" class="img-fluid" alt="Effect of precipitation"> Here, we see that precipitation has around the same effect on all 3 crops, around a 5-8% increase in crop yield.</p>
+<p>Doing the same for precipitation, we get: <img src="./outputs/200-model-fit/precipitation_effects.png" title="Effect of precipitation on median yield" class="img-fluid" alt="Effect of precipitation"> Here, we see that precipitation has around the same effect on all 3 crops, around a 5-8% increase in median crop yield.</p>
 
 
 </section>

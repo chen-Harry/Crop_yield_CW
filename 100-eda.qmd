@@ -12,7 +12,7 @@ The project shall aim to study the effect of precipitation and temperature on cr
 -   The data for precipitation was obtained from [Out World in Data](https://ourworldindata.org/grapher/average-precipitation-per-year), and records the average precipitation for countries on an annual basis.
 -   The data for temperature was obtained from the [World Bank Group](https://climateknowledgeportal.worldbank.org/country/united-kingdom/climate-data-historical#:~:text=The%20UK). It contains historic data on the mean surface air temperature.
 
-We shall mainly be looking at 3 crops: wheat, barley, and rapeseed, which represent the 3 most popular crops grown in the UK(TODO: citation).
+We shall mainly be looking at 3 crops: wheat, barley, and rapeseed, which represent the 3 most popular crops grown in the UK ([GOV.UK. ‘Agricultural Land Use in United Kingdom at 1 June 2024’. Accessed 3 May 2025.](https://www.gov.uk/government/statistics/agricultural-land-use-in-the-united-kingdom/agricultural-land-use-in-united-kingdom-at-1-june-2023)).
 
 ![Average crop yield](./outputs/100-eda/annual_yield.png "Annual Yield of Crops in the UK") There appears to be a general trend of better crop yield over time. The yield of all 3 crops appears to be highly correlated, suggesting that they have common causes. One thing to note here is that the yield for rapeseed production is recorded as constant for the first 5 years of the data, and almost constant for the next 3 years. This seems unlikely, given the rest of the data, and will probably negatively impact the model fit for rapeseed yield.
 

@@ -16,7 +16,7 @@ f &\sim \text{GP}(\alpha, \rho) \\
 \beta_1, \, \beta_2 & \sim \text{Normal}(0, 1) \\
 \sigma & \sim \text{Half-Normal}(0,1)
 \end{align}
-$$ The goal is to be able to use this model to forecast the temperature for the next 10 years based on historic data. In order to efficiently sample from the posterior of the Gaussian process, I have used a fast Hilbert Space approximation [(Riutort-Mayol, G., Bürkner, PC., Andersen, M.R. et al. 2023)](https://arxiv.org/pdf/2004.11408). Some of the stan code used to implement this was copied from the MATH70073 - Advanced Bayesian Methods course notes.
+$$ The goal is to be able to use this model to forecast the temperature for the next 10 years based on historic data. In order to efficiently sample from the posterior of the Gaussian process, I have used a fast Hilbert Space approximation [(Riutort-Mayol, G., Bürkner, PC., Andersen, M.R. et al. 2023)](https://arxiv.org/pdf/2004.11408). Some of the STAN code used to implement this was copied from the MATH70073 - Advanced Bayesian Methods course notes.
 
 ![Temperature forecast model](./outputs/300-forecast/temp_forecast.png "Posterior 95% confidence interval for average annual temperature.") The model provides an adequate fit to the data, and captures the inherent uncertainty underlying the data. There is a clear non-stationary increasing trend in the last 50 or so years.
 

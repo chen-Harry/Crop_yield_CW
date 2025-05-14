@@ -102,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./300-forecast.html"> 
-<span class="menu-text">300-forecast</span></a>
+<span class="menu-text">Forecasting</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -158,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
 <li>The data for precipitation was obtained from <a href="https://ourworldindata.org/grapher/average-precipitation-per-year">Out World in Data</a>, and records the average precipitation for countries on an annual basis.</li>
 <li>The data for temperature was obtained from the <a href="https://climateknowledgeportal.worldbank.org/country/united-kingdom/climate-data-historical#:~:text=The%20UK">World Bank Group</a>. It contains historic data on the mean surface air temperature.</li>
 </ul>
-<p>We shall mainly be looking at 3 crops: wheat, barley, and rapeseed, which represent the 3 most popular crops grown in the UK(TODO: citation).</p>
+<p>We shall mainly be looking at 3 crops: wheat, barley, and rapeseed, which represent the 3 most popular crops grown in the UK (<a href="https://www.gov.uk/government/statistics/agricultural-land-use-in-the-united-kingdom/agricultural-land-use-in-united-kingdom-at-1-june-2023">GOV.UK. ‘Agricultural Land Use in United Kingdom at 1 June 2024’. Accessed 3 May 2025.</a>).</p>
 <p><img src="./outputs/100-eda/annual_yield.png" title="Annual Yield of Crops in the UK" class="img-fluid" alt="Average crop yield"> There appears to be a general trend of better crop yield over time. The yield of all 3 crops appears to be highly correlated, suggesting that they have common causes. One thing to note here is that the yield for rapeseed production is recorded as constant for the first 5 years of the data, and almost constant for the next 3 years. This seems unlikely, given the rest of the data, and will probably negatively impact the model fit for rapeseed yield.</p>
 <p><img src="./outputs/100-eda/precipitation_yield.png" title="Yield against precipitation of Crops in the UK" class="img-fluid" alt="Crop yield against precipitation"> <img src="./outputs/100-eda/temp_yield.png" title="Yield against temperature of Crops in the UK" class="img-fluid" alt="Crop yield against temperature"></p>
 <p>We can see clearly that for each crop the yield is positively correlated with annual precipitation and average temperature.</p>
