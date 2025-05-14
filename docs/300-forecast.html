@@ -151,6 +151,7 @@ window.Quarto = {
   <ul>
   <li><a href="#temperature-forecast-model" id="toc-temperature-forecast-model" class="nav-link active" data-scroll-target="#temperature-forecast-model">Temperature Forecast Model</a></li>
   <li><a href="#impact-on-crop-yield" id="toc-impact-on-crop-yield" class="nav-link" data-scroll-target="#impact-on-crop-yield">Impact on Crop Yield</a></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
   </ul>
 </nav>
     </div>
@@ -189,7 +190,7 @@ f &amp;\sim \text{GP}(\alpha, \rho) \\
 \beta_1, \, \beta_2 &amp; \sim \text{Normal}(0, 1) \\
 \sigma &amp; \sim \text{Half-Normal}(0,1)
 \end{align}
-\]</span> The goal is to be able to use this model to forecast the temperature for the next 10 years based on historic data. In order to efficiently sample from the posterior of the Gaussian process, I have used a fast Hilbert Space approximation <a href="https://arxiv.org/pdf/2004.11408">(Riutort-Mayol, G., Bürkner, PC., Andersen, M.R. et al.&nbsp;2023)</a>. Some of the stan code used to implement this was copied from the MATH70073 - Advanced Bayesian Methods course notes.</p>
+\]</span> The goal is to be able to use this model to forecast the temperature for the next 10 years based on historic data. In order to efficiently sample from the posterior of the Gaussian process, I have used a fast Hilbert Space approximation <a href="https://arxiv.org/pdf/2004.11408">(Riutort-Mayol, G., Bürkner, PC., Andersen, M.R. et al.&nbsp;2023)</a>. Some of the STAN code used to implement this was copied from the MATH70073 - Advanced Bayesian Methods course notes.</p>
 <p><img src="./outputs/300-forecast/temp_forecast.png" title="Posterior 95% confidence interval for average annual temperature." class="img-fluid" alt="Temperature forecast model"> The model provides an adequate fit to the data, and captures the inherent uncertainty underlying the data. There is a clear non-stationary increasing trend in the last 50 or so years.</p>
 </section>
 <section id="impact-on-crop-yield" class="level1">
@@ -197,6 +198,10 @@ f &amp;\sim \text{GP}(\alpha, \rho) \\
 <p>Using the forecast values for temperature, and combined with the previous model for crop yield, we can predict the impact of increasing temperature on yield. For this purposes we shall assume a constant annual precipitation based on the average over the last 10 years. The forecast is based on the log-normal model’s median, <span class="math inline">\(\exp(\hat{\mu}_{i,t})\)</span>.</p>
 <p><img src="./outputs/300-forecast/barley_forecast.png" title="Yield forecast for barley." class="img-fluid" alt="Barley yield forecast"> <img src="./outputs/300-forecast/rapeseed_forecast.png" title="Yield forecast for rapeseed." class="img-fluid" alt="Rapeseed yield forecast"> <img src="./outputs/300-forecast/wheat_forecast.png" title="Yield forecast for wheat." class="img-fluid" alt="Wheat yield forecast"></p>
 <p>The forecast for wheat and barley appears to be somewhat reasonable given historic data. The forecast for rapeseed appears to be overly confident in its predictions. As a sanity check, forecast appears to be consistent with the previous results, which showed that wheat is the most sensitive to increases in temperature, and rapeseed the least sensitive.</p>
+</section>
+<section id="discussion" class="level1">
+<h1>Discussion</h1>
+<p>The analyses presented here is based on the empirical association between crop yield and temperature. For example, it could be that higher temperatures are linked with more sunlight, which could explain the higher yield. Another explanation could be that as technology advances there is a natural increase in crop yield, and climate change has also caused the temperature to rise, i.e.&nbsp;time is a confounding variable. Or it could be due to market forces that farms with poor yield close down, so only farms with high yield remain.</p>
 
 
 </section>

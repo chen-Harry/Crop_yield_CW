@@ -179,7 +179,7 @@ window.Quarto = {
 
 <section id="model" class="level1">
 <h1>Model</h1>
-<p>I will fit a simple model for crop yield against precipitation and average annual temperature. Let <span class="math inline">\(y_{i,t}\)</span> be the crop yield of crop <span class="math inline">\(i\)</span> at year <span class="math inline">\(t\)</span>,<span class="math inline">\(T_t\)</span> the average temperature of year <span class="math inline">\(t\)</span>, <span class="math inline">\(P_t\)</span> the average precipitation at year <span class="math inline">\(t\)</span>. The model will assume that <span class="math inline">\(y_{i,t}\)</span> follows a lognormal distribution. <span class="math display">\[
+<p>I will fit a simple model for crop yield against precipitation and average annual temperature. Let <span class="math inline">\(y_{i,t}\)</span> be the crop yield of crop <span class="math inline">\(i\)</span> at year <span class="math inline">\(t\)</span>, <span class="math inline">\(T_t\)</span> the average temperature of year <span class="math inline">\(t\)</span>, <span class="math inline">\(P_t\)</span> the average annual precipitation at year <span class="math inline">\(t\)</span>. The model will assume that <span class="math inline">\(y_{i,t}\)</span> follows a lognormal distribution. <span class="math display">\[
 \begin{align}
 y_{i,t} &amp;\sim \text{LogNormal}(\mu_{i,t}, \sigma_i^2) \\
 \mu_{i,t} &amp;= \alpha_i + \beta_i T_t + \gamma_i P_t \\
